@@ -51,10 +51,10 @@
     <div class="primary-overlay">
       <div class="container">
         <div class="row">
+          
           <div class="col-lg-6 col-md-12">
             <h1 class="display-2 mt-5 pt-5">Do What You <span class="typewrite" data-period="2000" data-type='[ "Dream of..." ]'></span>
             </h1>
-
 
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, deleniti.</p>
             <a class="btn btn-outline-light btn-lg" href="#">
@@ -230,7 +230,8 @@
               <img src="img/person2.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Susan Williams">
               <h3>Grace Smith</h3>
               <h5>Co-Writer</h5>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolores earum numquam vel tempora, ut.</p>                <div class="d-flex flex-row justify-content-between">
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolores earum numquam vel tempora, ut.</p>                
+              <div class="d-flex flex-row justify-content-between">
                 <div>
                   <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
                 </div>
@@ -355,6 +356,11 @@
       </div>
     </div>
   </footer>
+
+              <!----------------- back to top -------------->
+      <a href="#home" id="back-to-top" class="btn btn-primary" title="home" role="button">
+          <i class="fa fa-angle-up"></i>
+      </a>
   
                   <!------- The End ---------->
 
@@ -364,5 +370,29 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/navbar-fixed.js"></script>
   <script src="js/typeWriteCustom.js"></script>
+
+
+
+
+<!-----------JS (back to top)-------------->
+<script>
+  //show and hide white nav
+  $(function () {
+  
+  $(window).scroll(function () {
+  
+      if ($(window).scrollTop() > 80) {
+          //show back top button
+          $("#back-to-top").fadeIn();
+      }else {
+          //hide back top button
+          $("#back-to-top").fadeOut();
+      }
+  });
+  });
+  </script>
+
+
+
 </body>
 </html>
